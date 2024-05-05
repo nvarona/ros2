@@ -17,7 +17,6 @@
         <color rgba="0 0 1 1"/>
     </material>
 
-
     <link name="world"></link>
 
     <joint name="world_to_base" type="fixed">
@@ -36,7 +35,6 @@
         </visual>
     </link>
 
-
     <joint name="base_to_l3" type="revolute">
         <parent link="base" />
         <child link="l3" />
@@ -44,7 +42,6 @@
         <axis rpy="0 0 0" xyz="0 0 1" />
         <limit effort="0.1" lower="-3.1" upper="3.1" velocity="0.2"/>
     </joint>
-
 
     <link name="l3">
         <visual>
@@ -65,12 +62,11 @@
         <limit effort="0.1" lower="-3.1" upper="3.1" velocity="0.2"/>
     </joint>
 
-
     <link name="l2">
         <visual>
             <origin xyz="0.75 0 0" rpy="0 1.57 0"/>
             <geometry>
-                
+
                 <cylinder length="1.5" radius="0.04" />
             </geometry>
             <material name="orange" />
@@ -85,18 +81,16 @@
         <limit effort="0.1" lower="-3.1" upper="3.1" velocity="0.2"/>
     </joint>
 
-
     <link name="l1">
         <visual>
             <origin xyz="0.5 0 0" rpy="0 1.57 0"/>
             <geometry>
-                
+
                 <cylinder length="1" radius="0.04" />
             </geometry>
             <material name="orange" />
         </visual>
     </link>
-
 
     <joint name="l1_to_grip" type="revolute">
         <parent link="l1" />
@@ -105,7 +99,6 @@
         <axis rpy="0 0 0" xyz="0 0 1" />
         <limit effort="0.1" lower="-3.1" upper="3.1" velocity="0.2"/>
     </joint>
-
 
     <link name="grip">
         <visual>
@@ -116,8 +109,6 @@
             <material name="white" />
         </visual>
     </link>
-
-
 
     <joint name="world_to_camera" type="fixed">
         <parent link="world" />
@@ -134,6 +125,5 @@
             <material name="blue" />
         </visual>
     </link>
-
 
 </robot>

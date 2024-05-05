@@ -20,6 +20,7 @@ Para replicar la pantalla RViz, querrás:
 - Agregue una visualización `RobotModel`, con el tema establecido en `/robot_description` y alfa establecido en 0,8
 - Agregue una pantalla `TF` con nombres habilitados.
 
+--------------------------------------------------------------------------------------------------
 ## How To Run
 
 1. Build the package with colcon.
